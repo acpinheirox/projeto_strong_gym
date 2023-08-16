@@ -5,30 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strong Gym</title>
     <link rel="stylesheet" href="./main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <section id="home">
     <header>
-        <h3>Strong Gym</h3>
-        <ul>
-            <li>
-                <a href="#" class="login-button">Login</a>
-            </li>
-        </ul>
+        <h1>Strong Gym</h1>
+        <div class="menu-hamburguer" id="menu-hamburguer">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="sidebar" class="sidebar">
+            <button id="close-menu">Fechar</button>
+            <ul>
+                <li><a href="#home" class="sidebar-links">Inicio</a></li>
+                <li><a href="#" class="sidebar-links">Sobre nós</a></li>
+                <li><a href="#" class="sidebar-links">Planos</a></li>
+                <li><a href="#" class="sidebar-login-button">Login</a></li>
+            </ul>
+        </div>
+        
     </header>
     <div class="main">
-        <h1>Strong Gym</h1>
-        <p>Sua evolução é o nosso foco</p>
-        <img src="./Imagens/Pose com halter.jpg" alt="Homem musculoso" width="400px">
+        <div class="content">
+            <h1>Strong Gym</h1>
+            <h2>Sua evolução é o nosso foco</h2>
+            <button type="button" class="inscreva-se"><a href="#" class="link">Inscreva-se</a></button>
+        </div>
+        <img src="./Imagens/Pose com halter.jpg" alt="Homem musculoso" class="imagem-circular">
     </div>
-    <button type="button" class="inscreva-se"><a href="#" class="link">Inscreva-se</a></button>
-    <div class="triangulo">
-        <img src="./Imagens/Rectangle 6.png" alt="Triangulo amarelo">
-    </div>
-    <div class="triangulo-pe">
-        <img src="./Imagens/Rectangle 5 (1).png" alt="triangulo em pe">
-    </div>
+    </section>
+    <script>
+        document.getElementById("menu-hamburguer").addEventListener("click", function() {
+        document.getElementById("sidebar").style.right = "0";
+        });
+
+        document.getElementById("close-menu").addEventListener("click", function() {
+        document.getElementById("sidebar").style.right = "-300px";
+        });
+    </script>
+    
 </body>
 </html>
+

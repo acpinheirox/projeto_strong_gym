@@ -1,104 +1,226 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+/* Main CSS */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto' sans-serif;
-}
-
-body{
-    background-color: black;
-    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
     overflow: hidden;
 }
 
-header{
-    justify-content: space-between;
+header {
     display: flex;
-    margin: 20px;
-    padding: 2px;
-    margin-top: 25px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #000000;
+    color: white;
 }
 
-header li {
+header li{
     list-style: none;
 }
 
-.main h1{
-    font-size: 50px;
-    font-weight: bolder;
-    color: #fcbc03;
-    font-family: 'Roboto';
-    margin-left: 150px;
-    margin-top: 150px;
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
-.main p{
-    font-size: 15px;
-    font-weight: bold;
-    color: #fcbc03;
-    margin-left: 185px;
-    font-family: 'Roboto';
+nav li{
+    display: inline;
 }
 
-header h3{
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
-}
-.inscreva-se{
-    width: 200px;
-    height: 40px;
-    background-color: #fcbc03;
-    color: white;
-    display: block;
-    margin-left: 180px;
-    border-radius: 10px;
-    font-family: 'Roboto';
-    font-weight: bold;
-    margin-top: 15px;
-    text-decoration: none;
-}
-
-.link{
+.links-menu{
     text-decoration: none;
     color: white;
-    font-weight: bold;
-    font-size: 20px;
+    padding: 5px;
+    margin-right: 15px;
+    transition: background-color 0.3s;
 }
 
-.main img{
-    position: absolute;
-    left: 50%;
-    top: 0%;
-    width: 700px;
-    height: 600px;
-    
-}
-
-.triangulo{
-    position: relative;
-    left: 58%;
-    top: 20px;
-    width: 400px;
-}
-.triangulo-pe{
-    position: absolute;
-    left: 44%;
-    top: 0px;
-    width: 1000px;
+.links-menu:hover{
+    color: #e6a603;
 }
 
 .login-button {
-    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 16px;
+    background-color: #fcbc03;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover{
+    background-color: #e6a603;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: white;
+    margin: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    max-width: 400px;
+}
+
+.content h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: 'Roboto';
+    margin-top: -20px;
+}
+
+.content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: 'Bricolage+Grotesque' sans-serif;
+    font-weight: bolder;
+    margin-top: -50px;
+}
+
+.inscreva-se {
+    display: inline-block;
+    padding: 10px 30px;
     background-color: #fcbc03;
     color: white;
-    padding: 10px 20px;
+    border: none;
     border-radius: 10px;
-    text-decoration: none;
-    font-family: 'Roboto';
     font-weight: bold;
-    position: relative;
-    z-index: 2; 
-    list-style: none;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 20px;
 }
+
+.inscreva-se:hover {
+    background-color: #e6a603;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.imagem-circular {
+    width: 460px;
+    height: 435px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -25px;
+}
+
+/* Side Bar */
+.sidebar {
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100%;
+    background-color: #000000;
+    overflow-y: auto;
+    transition: right 0.5s;
+    z-index: 1000;
+    padding-top: 60px;
+    box-shadow: -2px 0px 6px rgba(0, 0, 0, 0.1);
+}
+
+#close-menu{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+#close-menu:hover{
+    color: #e6a603;
+}
+.sidebar button{
+    margin-left: 240px;
+    background-color: #000000;
+    border: none;
+}
+.close-sidebar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-links {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    right: 15px;
+    top: -50px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar-links:hover {
+    color: #e6a603;
+}
+
+.sidebar-login-button {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    background-color: #fcbc03;
+    border-radius: 10px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 50px;
+    transition: background-color 0.3s;
+    width: 190px;
+}
+
+.sidebar-login-button:hover {
+    background-color: #e6a603;
+}
+
+#sidebar-toggle{
+    color: black;
+}
+
+/*Menu Hamburguer*/
+.menu-hamburguer{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+
+}
+
