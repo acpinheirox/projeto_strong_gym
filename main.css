@@ -7,7 +7,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
@@ -17,6 +17,7 @@ header {
     padding: 10px 30px;
     background-color: #000000;
     color: white;
+    height: 55px;
 }
 
 header li{
@@ -66,30 +67,71 @@ nav li{
     justify-content: space-between;
     padding: 80px;
     background-color: white;
-    top: -100px;
+    top: 98px;
     margin: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1155px;
+    width: 100%;
+    max-height: 400px;
 }
 
-.content {
-    max-width: 400px;
+.main-plano{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    background-color: #fcbc03;
+    top: 80px;
+    margin: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1155px;
+    width: 100%;
+    max-height: 700px;
+}
+.main-plano img{
+    width: 400px;
+    height: 300px;
+    border-radius: 30px;
 }
 
-.content h2 {
-    font-size: 22px;
+.main-plano p{
+    padding: 70px;
+    margin-left: 20px;
+    margin-top: -75px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.sobre { 
+    padding: 10px; 
+    text-align: center; 
     margin-bottom: 20px;
-    color: #000000;
-    font-family: 'Roboto';
-    margin-top: -20px;
+    font-size: 20px;
+}
+.juntos{
+    padding: -10px;
 }
 
-.content h1 {
-    font-size: 45px;
+
+.sobre h2 {
+    margin: 0; 
+}
+.content {
+    max-width: 500px;
+    margin-top: 100px;
+}
+
+
+.content{
+    font-size: 25px;
     margin-bottom: 20px;
     color: #000000;
     font-family: 'Bricolage+Grotesque' sans-serif;
     font-weight: bolder;
-    margin-top: -50px;
+    margin-top: -40px;
+    margin-left: 325px;
+    
 }
 
 .inscreva-se {
@@ -103,6 +145,7 @@ nav li{
     text-decoration: none;
     transition: background-color 0.3s;
     font-size: 20px;
+    margin-left: 160px;
 }
 
 .inscreva-se:hover {
@@ -119,13 +162,13 @@ nav li{
     height: 350px;
 }
 .imagem-circula{
-    width: 560px;
+    width: 460px;
     height: 435px;
     border-radius: 50%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     position: relative;
-    top: -85px;
-    left: 800px;
+    top: -180px;
+    left: 700px;
 }
 
 /* Side Bar */
@@ -146,6 +189,8 @@ nav li{
 #close-menu{
     cursor: pointer;
     color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
 }
 
 #close-menu:hover{
@@ -224,6 +269,7 @@ nav li{
 .menu-hamburguer span{
     height: 2px;
     width: 100%;
+    height: 4px;
     background-color: white;
     display: block;
     margin-bottom: 4px;
