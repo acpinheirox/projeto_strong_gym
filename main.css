@@ -9,6 +9,7 @@
 body{
     background-color: black;
     color: white;
+    overflow: hidden;
 }
 
 header{
@@ -19,48 +20,85 @@ header{
     margin-top: 25px;
 }
 
+header li {
+    list-style: none;
+}
+
+.main h1{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fcbc03;
+    font-family: 'Roboto';
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+.main p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fcbc03;
+    margin-left: 185px;
+    font-family: 'Roboto';
+}
+
 header h3{
     font-size: 20px;
     color: white;
     font-weight: bold;
 }
-
-header li a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto';
-    font-weight: bold;
-}
-
-header li{
-    list-style: none;
-}
-
-header button{
-    width: 60px;
-    height: 35px;
-    background-color: #fcbc03;
-    border: none;
-    border-radius: 10px;
-}
-
 .inscreva-se{
-    width: 160px;
-    height: 35px;
+    width: 200px;
+    height: 40px;
     background-color: #fcbc03;
     color: white;
     display: block;
-    margin-left: 120px;
+    margin-left: 180px;
     border-radius: 10px;
     font-family: 'Roboto';
     font-weight: bold;
-    margin-top: 200px;
-    
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .main img{
     position: absolute;
-    left: 47%;
-    top: 15%;
+    left: 50%;
+    top: 0%;
     width: 700px;
+    height: 600px;
+    
+}
+
+.triangulo{
+    position: relative;
+    left: 58%;
+    top: 20px;
+    width: 400px;
+}
+.triangulo-pe{
+    position: absolute;
+    left: 44%;
+    top: 0px;
+    width: 1000px;
+}
+
+.login-button {
+    display: block;
+    background-color: #fcbc03;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: bold;
+    position: relative;
+    z-index: 2; 
+    list-style: none;
 }
