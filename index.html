@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -30,15 +32,27 @@
         </div>
         
     </header>
+    <div id="carrosel-imagem">
+        <img src="./Imagens/slide 01.jpg" alt="Homem musculoso" >
+        <img src="./Imagens/Slide 02.jpg" alt="Homem musculoso" >
+        <img src="./Imagens/Slide 03.jpg" alt="Homem musculoso" >
+        
+    </div>
     <div class="main">
         <div class="content">
             <h1>Strong Gym</h1>
             <h2>Sua evolução é o nosso foco</h2>
             <button type="button" class="inscreva-se"><a href="#" class="link">Inscreva-se</a></button>
         </div>
-        <img src="./Imagens/Pose com halter.jpg" alt="Homem musculoso" class="imagem-circular">
+        
     </div>
     </section>
+
+    
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         document.getElementById("menu-hamburguer").addEventListener("click", function() {
         document.getElementById("sidebar").style.right = "0";
@@ -47,6 +61,12 @@
         document.getElementById("close-menu").addEventListener("click", function() {
         document.getElementById("sidebar").style.right = "-300px";
         });
+        $(document).ready(function(){
+    $('#carrosel-imagem').slick({
+        autoplay: true,
+    });
+
+    })
     </script>
     
 </body>

@@ -66,6 +66,7 @@ nav li{
     justify-content: space-between;
     padding: 80px;
     background-color: white;
+    top: -100px;
     margin: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -113,13 +114,18 @@ nav li{
     color: white;
 }
 
-.imagem-circular {
-    width: 460px;
+
+#carrosel-imagem{
+    height: 350px;
+}
+.imagem-circula{
+    width: 560px;
     height: 435px;
     border-radius: 50%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     position: relative;
-    top: -25px;
+    top: -85px;
+    left: 800px;
 }
 
 /* Side Bar */
