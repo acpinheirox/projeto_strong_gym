@@ -20,6 +20,10 @@ header {
     height: 55px;
     
 }
+header img{
+    width: 170px;
+    margin-top: 10px;
+}
 
 header li{
     list-style: none;
@@ -348,7 +352,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    margin-top: 60px;
+    margin-top: -4px;
 }
 
 .plans-container {
@@ -363,4 +367,8 @@ footer {
 
 del{
     opacity: 60%;
+}
+
+#foto-final{
+    margin-top: 60px;
 }
