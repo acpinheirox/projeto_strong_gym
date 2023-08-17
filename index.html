@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <header>
+    <header id="sticky-header">
         <h1>Strong Gym</h1>
         <div class="menu-hamburguer" id="menu-hamburguer">
             <span></span>
@@ -39,6 +39,7 @@
         <img src="./Imagens/slide 04.jpg" alt="">
         
     </div>
+    <!--  SESSÃO INICIO  -->
     <section id="home">
     <div class="main">
         <div class="content">
@@ -48,7 +49,7 @@
         
     </div>
     </section>
-
+    <!--  SESSÃO SOBRE NÓS  -->
     <section id="sobre-nos">
         <div class="main-plano">
             <img src="./Imagens/pexels-victor-freitas-949126.jpg" alt="">
@@ -61,7 +62,7 @@
             </div>
         </div>
     </section>
-
+    <!--  PLANOS DA ACADEMIA  -->
     <section class="main-preço" id="planos">
         
         <div class="plans-container">
@@ -93,28 +94,13 @@
         
     </section>
     
-
-    
-
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        document.getElementById("menu-hamburguer").addEventListener("click", function() {
-        document.getElementById("sidebar").style.right = "0";
-        });
-
-        document.getElementById("close-menu").addEventListener("click", function() {
-        document.getElementById("sidebar").style.right = "-300px";
-        });
-        $(document).ready(function(){
-    $('#carrosel-imagem').slick({
-        autoplay: true,
-    });
-
-    })
-    </script>
-    
+    <script src="./script.js"></script>
+    <footer>
+        &copy; Strong Gym - Todos os direitos reservados
+    </footer>
 </body>
 </html>
 
