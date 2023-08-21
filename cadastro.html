@@ -164,17 +164,17 @@
     </div>
 
 <script>
-var checkboxes = document.querySelectorAll('.single-checkbox');
+    var checkboxes = document.querySelectorAll('.single-checkbox');
 
-checkboxes.forEach(function(checkbox) {
-  checkbox.addEventListener('change', function() {
+    checkboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
     checkboxes.forEach(function(otherCheckbox) {
-      if (otherCheckbox !== checkbox) {
+        if (otherCheckbox !== checkbox) {
         otherCheckbox.checked = false;
-      }
+        }
     });
-  });
-});
+    });
+    });
 </script>
 
 </body>
