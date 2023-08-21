@@ -334,6 +334,12 @@ li {
     margin: 0.5em 0;
 }
 
+.button-planos a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+}
 .button-planos {
     background-color: #fcbc03;
     color: white;
