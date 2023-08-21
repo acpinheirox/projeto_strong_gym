@@ -13,21 +13,307 @@ header {
     background-color: #ffffff;
     color: white;
     height: 55px;
-    align-items: center;
     box-shadow: 5px 5px #ffffff;
-    height: 100px;
+    height: 55px;
+    text-align: center;
+}
+header li{
+    list-style: none;
 }
 header img{
-    width: 170px;
+    width: 100px;
     margin-top: 10px;
+    
 }
 
 
 header h2 {
     font-size: 28px;
     font-weight: bold;
-    margin-left: 10px;
+    margin-top: 35px;
     color: black;
     margin-left: 30px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 30px;
+    position: relative;
+    
+}
+
+.title {
+    font-size: 28px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
     align-items: center;
+    padding-top: 10px;
+}
+.message{
+    margin-top: -10px;
+}
+.message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin a {
+    color: royalblue;
+}
+
+.signin a:hover {
+    text-decoration: underline royalblue;
+}
+
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+
+.form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+.form label{
+    width: 330px;
+}
+.form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid + span {
+    color: green;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    background-color: #fcbc03;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transform: .3s ease;
+}
+
+.submit:hover {
+    background-color: #e6a603;
+}
+
+@keyframes pulse {
+    from {
+    transform: scale(0.9);
+    opacity: 1;
+    }
+
+    to {
+    transform: scale(1.8);
+    opacity: 0;
+}
+}
+
+.plan {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(255, 238, 0, 0.205);
+    padding: 10px;
+    background-color: #fff;
+    color: #697e91;
+    max-width: 300px;
+    display: flex;
+    margin-left: 560px;
+    margin-top: -495px;
+    height: 450px;
+}
+.plan-2{
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(255, 238, 0, 0.205);
+    padding: 10px;
+    background-color: #fff;
+    color: #697e91;
+    max-width: 300px;
+    display: flex;
+    margin-left: 950px;
+    margin-top: -470px;
+    height: 450px;
+}
+.plan strong, 
+.plan-2 strong{
+    font-weight: 600;
+    color: #425275;
+}
+
+.plan .inner, 
+.plan-2 .inner{
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: relative;
+}
+
+.plan .pricing,
+.plan-2 .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffde7d;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+}
+
+.plan .pricing small,
+.plan-2 .pricing small {
+    color: black;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+}
+
+.plan .title,
+.plan-2 .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #425675;
+}
+
+.plan .title + * ,
+.plan-2 .title + *{
+    margin-top: 0.75rem;
+}
+
+.plan .info + * ,
+.plan-2 .info + *{
+    margin-top: 1rem;
+}
+
+.plan .features, 
+.plan-2 .features{
+    display: flex;
+    flex-direction: column;
+}
+
+.plan .features li,
+.plan-2 .features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+  .plan .features li + * ,
+  .plan-2 .features li + *{
+    margin-top: 0.75rem;
+}
+
+.plan .features .icon ,
+.plan-2 .features .icon {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.plan .features .icon svg ,
+.plan-2 .features .icon svg{
+    width: 14px;
+    height: 14px;
+}
+
+  .plan .features + * ,
+  .plan-2 .features + *{
+    margin-top: 1.25rem;
+}
+
+.plan .action ,
+.plan-2 .action{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#checkbox1, 
+#checkbox2{
+    width: 30px;
+    height: 30px;
+}
+
+
+.checkbox-label, 
+.checkbox-label2 {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+
+.checkbox-label:before ,
+.checkbox-label2::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    position: absolute;
+    margin-left: 85px;
+    top: 2px;
+}
+
+
+input[type="checkbox"]:checked + .checkbox-label:before,
+input[type="checkbox"]:checked + .checkbox-label2:before {
+    background-color: #fcbc03;
+    border-color: #e6a603;
 }
