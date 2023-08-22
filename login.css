@@ -35,3 +35,13 @@ header h2 {
     margin-left: 30px;
     text-align: center;
 }
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: #F4F6FB;
+    border: 1px solid white;
+    box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
+    -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
+    -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
+  }
