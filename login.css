@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    color: white;
+    height: 55px;
+    box-shadow: 5px 5px #ffffff;
+    height: 55px;
+    text-align: center;
+}
+header li{
+    list-style: none;
+}
+header img{
+    width: 100px;
+    margin-top: 10px;
+    
+}
+
+
+header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 35px;
+    color: black;
+    margin-left: 30px;
+    text-align: center;
+}
