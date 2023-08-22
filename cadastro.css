@@ -35,7 +35,7 @@ header h2 {
     margin-left: 30px;
     text-align: center;
 }
-
+/*FORMULARIO*/
 .form {
     display: flex;
     flex-direction: column;
@@ -137,18 +137,7 @@ header h2 {
     background-color: #e6a603;
 }
 
-@keyframes pulse {
-    from {
-    transform: scale(0.9);
-    opacity: 1;
-    }
-
-    to {
-    transform: scale(1.8);
-    opacity: 0;
-}
-}
-
+/*PLANOS*/
 .plan {
     border-radius: 16px;
     box-shadow: 0 30px 30px -25px rgba(255, 238, 0, 0.205);
@@ -310,7 +299,9 @@ input[type="checkbox"] {
     margin-left: 85px;
     top: 2px;
 }
-
+.checkbox-label{
+    margin-top: 80px;
+}
 
 input[type="checkbox"]:checked + .checkbox-label:before,
 input[type="checkbox"]:checked + .checkbox-label2:before {

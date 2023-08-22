@@ -6,6 +6,8 @@ body {
     overflow-x: hidden;
 }
 
+/*HEADER*/
+
 header {
     display: flex;
     align-items: center;
@@ -36,6 +38,8 @@ header h2 {
     text-align: center;
 }
 
+/*FORMULARIO LOGIN*/
+
 .card {
     width: 200px;
     height: 260px;
@@ -45,35 +49,35 @@ header h2 {
     
     margin-left: 550px;
     margin-top: 90px;
-  }
+}
 
-  .form {
+.form {
     padding: 25px;
-  }
-  
-  .card_header {
+}
+
+.card_header {
     display: flex;
     align-items: center;
-  }
-  
-  .card svg {
+}
+
+.card svg {
     color: #e6a603;
     margin-bottom: 20px;
     margin-right: 5px;
-  }
-  
-  .form_heading {
+}
+
+.form_heading {
     padding-bottom: 20px;
     font-size: 21px;
     color: #fcbc03;
     font-weight: bolder;
-  }
-  
-  .field {
+}
+
+.field {
     padding-bottom: 10px;
-  }
-  
-  .input {
+}
+
+.input {
     border-radius: 5px;
     background-color: #e9e9f7;
     padding: 5px;
@@ -81,25 +85,25 @@ header h2 {
     width: 100%;
     color: #fcbc03;
     border: 1px solid #dadaf7
-  }
-  
-  .input:focus-visible {
+}
+
+.input:focus-visible {
     outline: 1px solid #aeaed6;
-  }
-  
-  .input::placeholder {
+}
+
+.input::placeholder {
     color: #bcbcdf;
-  }
-  
-  label {
+}
+
+label {
     color: #B2BAC8;
     font-size: 14px;
     display: block;
     padding-bottom: 4px;
     margin-left: -5px;
-  }
-  
-  button {
+}
+
+button {
     background-color: #fcbc03;
     margin-top: 15px;
     font-size: 14px;
