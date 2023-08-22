@@ -110,8 +110,21 @@ header h2 {
     border: none;
     font-weight: bold;
     margin-left: -5px;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #e6a603;
-  }
+}
+
+.voltar{
+    margin-left: 175px;
+    margin-top: 10px;
+}
+
+.voltar a{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: underline royalblue;
+    color: royalblue
+}
