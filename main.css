@@ -78,6 +78,7 @@ nav li{
     max-width: 1155px;
     width: 100%;
     max-height: 400px;
+    margin-left: 15px;
 }
 
 .main-plano{
@@ -93,6 +94,7 @@ nav li{
     max-width: 1155px;
     width: 100%;
     max-height: 700px;
+    margin-left: 15px;
 }
 
 .main-preço {
@@ -108,6 +110,7 @@ nav li{
     max-width: 1155px;
     width: 100%;
     max-height: 400px;
+    margin-left: 15px;
 }
 .main-plano img{
     width: 400px;
@@ -151,7 +154,7 @@ nav li{
     font-family: 'Bricolage+Grotesque' sans-serif;
     font-weight: bolder;
     margin-top: -40px;
-    margin-left: 325px;
+    margin-left: 335px;
     
 }
 
