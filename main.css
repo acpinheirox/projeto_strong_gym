@@ -356,13 +356,42 @@ li {
 .button-planos:hover {
     background-color: #e6a603;
 }
+summary{
+    padding: 16px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 28, 34);
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgb(53, 63, 68);
+    margin-top: -5px;
+}
 
+summary::marker{
+    color: #e6a603;
+    font-size: 15px;
+}
+
+details{
+    background-color: rgb(12, 12, 14);
+    color: white;
+}
+.ul{
+    padding-bottom: 16px;
+    font-size: 015px;
+    height: 10px;
+}
+.li{
+    margin-left: 20px;
+}
+.rodape{
+    background-color: rgb(12, 12, 14);
+}
 footer {
     background-color: #000000;
     color: white;
     text-align: center;
     padding: 1em 0;
-    margin-top: -4px;
+    margin-top: -7px;
 }
 
 .plans-container {
