@@ -124,6 +124,7 @@ header h2 {
 .submit {
     border: none;
     outline: none;
+    width: 100%;
     background-color: #fcbc03;
     padding: 10px;
     border-radius: 10px;
@@ -131,6 +132,7 @@ header h2 {
     font-size: 16px;
     font-weight: bold;
     transform: .3s ease;
+    cursor: pointer;
 }
 
 .submit:hover {
