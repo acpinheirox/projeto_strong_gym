@@ -13,7 +13,7 @@
         <h2>Área do aluno</h2>
     </header>
     <!--FORMULARIO -->
-    <form id="cadastroForm" class="form">
+    <form class="form">
         <p class="title">Inscreva-se</p>
         <p class="message">Faça seu cadastro para ter acesso a nossa academia</p>
         <label>
@@ -34,7 +34,7 @@
             <input required="required" placeholder="" type="password" class="input">
             <span>Confirme sua senha</span>
         </label>
-        <button type="submit" class="submit">Enviar</button>
+        <button class="submit">Enviar</button>
         <p class="signin">Já tem conta? <a href="./login.html">Login</a> </p>
     </form>
 
@@ -86,8 +86,8 @@
                     <span><strong> Área de aeróbicos</strong></span>
                 </li>
             </ul>
-            <input required="required" type="checkbox" id="checkbox1" class="single-checkbox">
-            <label required="required" for="checkbox1" class="checkbox-label"></label>
+            <input type="checkbox" id="checkbox1" class="single-checkbox">
+            <label for="checkbox1" class="checkbox-label"></label>
         </div>
     </div>
    
@@ -158,8 +158,8 @@
                 </li>
             </ul>
             
-            <input required="required" type="checkbox" id="checkbox2" class="single-checkbox">
-            <label required="required" for="checkbox2" class="checkbox-label2"></label>
+            <input type="checkbox" id="checkbox2" class="single-checkbox">
+            <label for="checkbox2" class="checkbox-label2"></label>
         </div>
     </div>
 
@@ -174,11 +174,6 @@
         }
     });
     });
-    });
-
-    document.getElementById('cadastroForm').addEventListener('submit', function(event) {
-        event.preventDefault(); 
-        window.location.href = './login.html';
     });
 </script>
 

@@ -9,24 +9,7 @@ body {
     background-color: #f0f0f0;
     overflow-x: hidden;
 }
-#home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -90px;
-}
-#planos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -90px;
-}
-#sobre-nos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -25px;
-}
+
 header {
     display: flex;
     align-items: center;
@@ -35,8 +18,8 @@ header {
     background-color: #000000;
     color: white;
     height: 55px;
+    
 }
-
 header img{
     width: 170px;
     margin-top: 10px;
@@ -83,10 +66,10 @@ nav li{
 }
 
 .main {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    justify-content: space-between;
     padding: 80px;
     background-color: white;
     top: 98px;
@@ -146,8 +129,7 @@ nav li{
 /*SOBRE*/
 .sobre { 
     padding: 10px; 
-    display: block;
-    justify-content: center;
+    text-align: center; 
     margin-bottom: 20px;
     font-size: 20px;
 }
@@ -155,11 +137,7 @@ nav li{
     padding: -10px;
 }
 
-.sobre  p{
-    display: inline;
-    font-size: 10px;
-    align-items: center;
-}
+
 .sobre h2 {
     margin: 0; 
 }
@@ -170,15 +148,14 @@ nav li{
 
 
 .content{
-    display: block;
-    align-items: center;
-    justify-content: center;
     font-size: 25px;
     margin-bottom: 20px;
     color: #000000;
     font-family: 'Bricolage+Grotesque' sans-serif;
     font-weight: bolder;
     margin-top: -40px;
+    margin-left: 335px;
+    
 }
 
 .inscreva-se {
@@ -193,7 +170,6 @@ nav li{
     transition: background-color 0.3s;
     font-size: 20px;
     margin-left: 160px;
-    cursor: pointer;
 }
 
 .inscreva-se:hover {
@@ -388,33 +364,13 @@ summary{
     cursor: pointer;
     border: 1px solid rgb(53, 63, 68);
     margin-top: -5px;
-    transition: all .5s ease;
 }
 
 summary::marker{
-    content: '';
-    display: none;
+    color: #e6a603;
+    font-size: 15px;
 }
 
-
-summary::after{
-    content: '+';
-    position: absolute;
-    right: 50px;
-    margin-top: -30px;
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: bold;
-    transition: all .5s ease;
-}
-
-details[open] summary::after{
-    content: '-';
-    right: 55px;
-    transition: all .5s ease;
-}
 details{
     background-color: rgb(12, 12, 14);
     color: white;
