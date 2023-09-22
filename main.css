@@ -20,6 +20,7 @@ header {
     height: 55px;
     
 }
+
 header img{
     width: 170px;
     margin-top: 10px;
@@ -170,6 +171,7 @@ nav li{
     transition: background-color 0.3s;
     font-size: 20px;
     margin-left: 160px;
+    cursor: pointer;
 }
 
 .inscreva-se:hover {
@@ -364,13 +366,33 @@ summary{
     cursor: pointer;
     border: 1px solid rgb(53, 63, 68);
     margin-top: -5px;
+    transition: all .5s ease;
 }
 
 summary::marker{
-    color: #e6a603;
-    font-size: 15px;
+    content: '';
+    display: none;
 }
 
+
+summary::after{
+    content: '+';
+    position: absolute;
+    right: 50px;
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+details[open] summary::after{
+    content: '-';
+    right: 55px;
+    transition: all .5s ease;
+}
 details{
     background-color: rgb(12, 12, 14);
     color: white;
